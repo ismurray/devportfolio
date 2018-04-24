@@ -34,7 +34,9 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+// $base-color: #3498db;
+// $base-color: #006400;
+$base-color: #2e8b57;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -351,7 +353,8 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    // background: url(../images/lead-bg.jpg);
+    background: url("http://res.cloudinary.com/ismurray/image/upload/v1524517094/photo-1475906089153-644d9452ce87.jpg");
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -379,7 +382,8 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        // color: lighten($base-color, 25%);
+        color: darken($base-color, 20%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -403,7 +407,8 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    // background: rgba($base-color-hover, 0.8);
+    background: rgba($base-color-hover, 0.6);
     z-index: 1;
 }
 
@@ -424,7 +429,8 @@ footer {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        border: 3px solid lighten($base-color, 25%);
+        // border: 3px solid lighten($base-color, 25%);
+        border: 3px solid darken($base-color, 15%);
         text-align:center;
     }
 
