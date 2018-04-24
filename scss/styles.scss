@@ -661,9 +661,11 @@ footer {
 
 .project-image {
     float: left;
-    height: 400px;
     /* increased height of containing div of images, to make the whole
     project div's height increase to allow title to show */
+    height: 400px;
+    padding: 50px 0;
+
 
     img {
         max-width: 300px;
