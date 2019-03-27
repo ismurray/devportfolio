@@ -63,7 +63,7 @@
             <h1>Ian Murray</h1>
             <h2>Full-Stack Web Developer</h2>
             <img src="http://res.cloudinary.com/ismurray/image/upload/v1523215450/headshot1.jpg" class="rounded-circle headshot" alt="Ian Murray Headshot">
-            <a href="images/IanMurrayResume-2018-04-31.pdf" download="IanMurrayResume-2018-04-31.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="images/IanMurrayResumeMA-2019-03-26.pdf" download="IanMurrayResumeMA-2019-03-26.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -97,14 +97,22 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript <i class="devicon-javascript-plain"></i></li>
             <li>Ruby <i class="devicon-ruby-plain-wordmark colored"></i></li>
-            <li>Ember </li>
             <li>Rails <i class="devicon-rails-plain-wordmark colored"></i></li>
-            <li>Node.js <i class="devicon-nodejs-plain-wordmark"></i></li>
-            <li>Python <i class="devicon-python-plain-wordmark colored"></i></li>
-            <li>SQL</li>
             <li>PostgreSQL <i class="devicon-postgresql-plain-wordmark colored"></i></li>
+            <li>Cassandra </li>
+            <li>Redis <i class="devicon-redis-plain-wordmark colored"></i></li>
+            <li>Ruby-Grape </li>
+            <li>Apache Spark <i class="devicon-apache-plain-wordmark colored"></i></li>
+            <li>Scala </li>
+            <li>Apache Parquet <i class="devicon-apache-plain-wordmark colored"></i></li>
+            <li>JavaScript <i class="devicon-javascript-plain"></i></li>
+            <li>RabbitMQ </li>
+            <li>AWS <i class="devicon-amazonwebservices-plain"></i></li>
+            <li>GCP <i class="devicon-google-plain"></i></li>
+            <li>Ember </li>
+            <li>Node.js <i class="devicon-nodejs-plain-wordmark"></i></li>
+            <li>Python <i class="devicon-python-plain-wordmark"></i></li>
             <li>MongoDB <i class="devicon-mongodb-plain-wordmark colored"></i></li>
             <li>Mongoose</li>
             <li>Express <i class="devicon-express-original colored"></i></li>
@@ -127,6 +135,69 @@
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/ismurray/image/upload/v1553639132/gamer-sensei-screenshot-dark.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Gamer Sensei</h3>
+                        <p>Ruby on Rails, PostgreSQL, Redis, RabbitMQ, AWS</p>
+                        <p>
+                            Worked as a back-end software engineer on an e-commerce site where gamers can purchase coaching time from esports professionals. Projects included:
+                        </p>
+                        <ul>
+                          <p>Redesigned the user notification system to integrate communications and add granularly multiplexed notification preferences across email, slack, discord, and internal messaging systems.</p>
+                          <p>Added integration of AmazonPay to the payment system, and built a refund system that integrates with Stripe and Paypal.</p>
+                          <p>Redesigned the calendar availabilities and lesson scheduling system to allow for more granular control of what types of students a sensei accepts lessons from at any given time.</p>
+                        </ul>
+                        <p><a href="https://www.gamersensei.com/" target="_blank">Live Site</a></p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/ismurray/image/upload/v1553639840/senseibot-league-champ-screenshot.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>SenseiBot - League Meta (WIP)</h3>
+                        <p>Ruby on Rails, Ruby-Grape, Cassandra, Apache Spark, Scala, PostgreSQL, RabbitMQ, GCP</p>
+                        <p>Worked as a back-end software engineer and data engineer on a League of Legends meta analysis platform.</p>
+                        <p>Built a Ruby-based system that spiders through the Riot Games League of Legends API to massage and store data from hundred of millions of matches into a Cassandra database.
+                        <p>Built a system using GCP BigQuery and Apache Spark (Scala) which perform a series of transformations and aggregations on the large-scale match dataset and user data to generate and store a number of detailed meta analyses.</p>
+                        <p>Built Rails/Ruby-Grape APIs to serve the aggregated and blended data to the senseibot.gg site, and to the senseibot discord chat bot.</p>
+                        <p><a href="https://staging.senseibot.gg/" target="_blank">Live Site</a></p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="https://res.cloudinary.com/ismurray/image/upload/v1553646694/range-royale-screenshot.png" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Range Royale</h3>
+                        <p>Ruby-Grape, PostgreSQL, Steam API</p>
+                        <p>
+                            Worked as a back-end software engineer on a 'shooting range' mastery game for first-person shooters, available on Steam. Projects included:
+                        </p>
+                        <ul>
+                          <p>Built a user authentication system, and an API to recieve, validate, and store incoming match data from the game client.</p>
+                          <p>Built a leaderboard and achievement system that integrates with the Steam developer API.</p>
+                        </ul>
+
+                        <p><a href="https://rangeroyale.gg/" target="_blank">Landing Page</a></p>
+                        <p><a href="https://store.steampowered.com/app/863190/Gamer_Senseis_Range_Royale/" target="_blank">Steam Store Link</a></p>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="http://res.cloudinary.com/ismurray/image/upload/v1523223128/raindrop-screenshot-resize.png" />
@@ -210,6 +281,18 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+
+          <div data-date="May 2018 – March 2019">
+              <h3>Gamer Sensei (Boston)</h3>
+              <h4>Back-End Software Engineer</h4>
+              <ul>
+                <li>Designed and implemented RESTful APIs (Ruby on Rails, Ruby-Grape microservices)</li>
+                <li>Data modeling and data structuring in SQL and NoSQL databases (PostgresQL, Cassandra)</li>
+                <li>Built microservices that retrieve, aggregate, and curate data for various output mediums: web, customized reports, messaging bots, etc (Ruby, Apache Spark, Scala, GCP BigQuery, Redis, RabbitMQ, Parquet)</li>
+                <li>Contributed to quality control via extensive automated test coverage, peer code review, and Continuous Integration (RSpec, Git, Codeship)</li>
+                <li>Collaborated across Engineering, Design, Marketing, and Business teams to ensure the needs of interior and exterior project stakeholders were met, using Agile methodology</li>
+              </ul>
+          </div>
 
           <div data-date="January 2018 – April 2018">
               <h3>General Assembly (Boston)</h3>
